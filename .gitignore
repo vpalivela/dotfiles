@@ -1,0 +1,11 @@
+/*
+!.vim
+!.vimrc
+!.emacs*
+!.gitignore
+!.gitmodules
+auto-save-list/
+elpa/
+swank/
+url/
+slime/
