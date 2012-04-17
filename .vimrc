@@ -10,15 +10,15 @@ set ruler
 syntax enable
 
 colorscheme solarized
-
+set background=dark
 if has ('gui_running')
-    set background=dark
+    "set background=dark
     
     " Set the font to inconloata size 12
     set guifont=Inconsolata:h14
 
 else
-    set background=light
+    "set background=light    
 endif
 
 " do not wrap long lines by default
@@ -69,14 +69,11 @@ set colorcolumn=85
 " add json syntax highlighting
 au BufNewFile,BufRead *.json set ft=javascript
 
-" add markdown syntax highlighting
-au BufNewFile,BufRead *.md set ft=mkd
-
 " Hightlight trailing whitespace
 "highlight ExtraWhitespace ctermbg=red guibg=red
 
 " this will pick up the trailing white space as long as we aren't typing on the line
-match ExtraWhitespace /\s\+\%#\@<!$/
+" match ExtraWhitespace /\s\+\%#\@<!$/
 
 " highlight the current line
 set cursorline
@@ -100,4 +97,5 @@ if has("autocmd")
     filetype plugin indent on
 endif
 
-
+" pathogen
+call pathogen#infect()
