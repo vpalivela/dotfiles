@@ -69,6 +69,8 @@ set colorcolumn=85
 " add json syntax highlighting
 au BufNewFile,BufRead *.json set ft=javascript
 
+au BufNewFile,BufRead *.xaml set ft=xml
+
 " Hightlight trailing whitespace
 "highlight ExtraWhitespace ctermbg=red guibg=red
 
