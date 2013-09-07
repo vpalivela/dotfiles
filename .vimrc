@@ -9,15 +9,16 @@ set ruler
 " turn on syntac highlighting
 syntax enable
 
-colorscheme solarized
 set background=dark
+
 if has ('gui_running')
     "set background=dark
     
     " Set the font to inconloata size 12
     set guifont=Inconsolata:h14
-
+    colorscheme solarized
 else
+    colorscheme slate
     "set background=light    
 endif
 
